@@ -2,6 +2,6 @@
 
 This folder contains:
 
--Data Transformation script.
+- Data Transformation script.
 
--Cleaned CSV file.
+- Cleaned CSV file.
