@@ -1,29 +1,35 @@
 # SQL
 
-- This folder contains the SQL pipeline used to clean, transform, and analyze the [UCI Taiwanese Credit Card Default dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
+This folder contains the SQL pipeline used to clean, transform, and analyze the
+[UCI Taiwanese Credit Card Default dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
 
-- The scripts implement a structured workflow that moves from raw data ingestion > data standardization > analytical views > risk segmentation.
+The scripts implement a structured workflow that moves from:
+
+**Raw Data Ingestion > Data Standardization > Analytical Views > Risk Segmentation**
+
+---
 
 # Main Script
 
-taiwanese_defaults.sql
+`taiwanese_defaults.sql`
 
-- This script performs the complete data preparation and analysis pipeline.
+This script performs the complete data preparation and analysis pipeline.
+
+---
 
 # Workflow Overview
-- Data Staging
 
-      A staging table is created from the raw dataset to allow transformations without modifying the original data.
+## 1. Data Staging
 
-- Steps include:
+A staging table is created from the raw dataset to allow transformations without modifying the original data.
 
-      Creating a staging table from the raw dataset
+### Steps
 
-      Removing duplicate header rows
+* Create a staging table from the raw dataset
+* Remove duplicate header rows
+* Rename encoded column names to meaningful labels
 
-      Renaming encoded column names to meaningful labels
-
-- Example transformations:
+### Example Transformations
 
        Original Column   	Renamed Column
        X1	                Given_credit
@@ -32,83 +38,86 @@ taiwanese_defaults.sql
        X4	                Marital_status
        X6–X11	            Monthly delay indicators
        Y	                Oct_default
-- Data Standardization
 
-      Encoded numeric fields are converted into readable categorical values.
+---
 
-- Examples:
+## 2. Data Standardization
 
-      Gender codes converted to Male / Female
+Encoded numeric fields are converted into readable categorical values.
 
-      Education levels converted to Graduate / Undergrad / High School
+### Examples
 
-      Marital status standardized
+* Gender codes → **Male / Female**
+* Education levels → **Graduate / Undergrad / High School**
+* Marital status standardized
+* Default indicator converted to **Yes / No**
 
-      Default indicator converted to Yes / No
+Monthly delay values are mapped to descriptive repayment states:
 
-      Monthly delay values are also mapped to descriptive repayment states, such as:
-      Dormant
-      Balance Cleared
-      Minimum Due Cleared
-      1–9 Month Delay
+* Dormant
+* Balance Cleared
+* Minimum Due Cleared
+* 1–9 Month Delay
 
-- Data Profiling
+---
 
-      Views are created to explore demographic and portfolio characteristics.
+## 3. Data Profiling
 
-- Examples include:
+Views are created to explore demographic and portfolio characteristics.
 
-      customer distribution by gender, education, and marital status
+Examples include:
 
-      average age across segments
-
-      default vs non-default counts
+* Customer distribution by gender, education, and marital status
+* Average age across segments
+* Default vs non-default counts
 
 These views help understand the composition of the credit portfolio.
 
-- Default Behavior Analysis
+---
 
-      A view evaluates the relationship between payment delay history and default probability.
+## 4. Default Behavior Analysis
 
-- The analysis calculates:
+A view evaluates the relationship between **payment delay history and default probability**.
 
-      total accounts per delay category
+The analysis calculates:
 
-      number of defaults
+* Total accounts per delay category
+* Number of defaults
+* Percentage of defaults
 
-      percentage of defaults
+This highlights how increasing payment delays correlate with higher default risk.
 
-      This highlights how increasing payment delays correlate with higher default risk.
+---
 
-- Payment Trend Analysis
+## 5. Payment Trend Analysis
 
-      A payment trend view classifies repayment behavior based on recent payment patterns.
+A payment trend view classifies repayment behavior based on recent payment patterns.
 
-- Accounts are categorized as:
+Accounts are categorized as:
 
-      Stable or Improving
-
-      Declining Trend
+* **Stable or Improving**
+* **Declining Trend**
 
 This provides an early indicator of financial deterioration.
 
-- Customer Journey Classification
+---
 
-      Customers are grouped into behavioral journey stages based on repayment behavior and default outcomes.
+## 6. Customer Journey Classification
+
+Customers are grouped into behavioral journey stages based on repayment behavior and default outcomes.
 
 Possible classifications include:
 
-      Healthy Customer Journey
+* Healthy Customer Journey
+* Early Warning Stage
+* Intervention Required Stage
+* Assessment Required
 
-      Early Warning Stage
+This simulates how lenders may track **customer risk progression over time**.
 
-      Intervention Required Stage
+---
 
-      Assessment Required
-
-This simulates how lenders may track customer risk progression over time.
-
-- Credit Risk Staging
+## 7. Credit Risk Staging
 
 A rule-based risk staging framework segments the portfolio into three risk categories.
 
@@ -117,18 +126,17 @@ A rule-based risk staging framework segments the portfolio into three risk categ
       Stage 2	Elevated risk accounts
       Stage 3	Non-performing accounts
 
-These stages allow the portfolio to be monitored by risk severity and credit exposure.
+These stages allow the portfolio to be monitored by **risk severity and credit exposure**.
 
-- Output
+---
 
-       The SQL pipeline generates several analytical views that can be used directly in business intelligence tools such as Power BI.
+# Output
 
-- These views support:
+The SQL pipeline generates several analytical views that can be used directly in **business intelligence tools such as Power BI**.
 
-      portfolio risk monitoring
+These views support:
 
-      exposure analysis
-
-      default behavior analysis
-
-      credit risk staging dashboards
+* Portfolio risk monitoring
+* Exposure analysis
+* Default behavior analysis
+* Credit risk staging dashboards
