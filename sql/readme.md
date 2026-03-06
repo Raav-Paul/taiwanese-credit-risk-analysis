@@ -32,6 +32,7 @@ A staging table is created from the raw dataset to allow transformations without
 ### Example Transformations
 
        Original Column   	Renamed Column
+       
        X1	                Given_credit
        X2	                Gender
        X3	                Education
@@ -121,7 +122,8 @@ This simulates how lenders may track **customer risk progression over time**.
 
 A rule-based risk staging framework segments the portfolio into three risk categories.
 
-      Stage	Description
+      Stage	    Description
+
       Stage 1	Performing accounts
       Stage 2	Elevated risk accounts
       Stage 3	Non-performing accounts
