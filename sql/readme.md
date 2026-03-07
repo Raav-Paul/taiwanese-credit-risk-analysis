@@ -7,7 +7,7 @@ The scripts implement a structured workflow that moves from:
 
 **Raw Data Ingestion > Data Standardization > Analytical Views > Risk Segmentation**
 
----
+--------------------------------------
 
 # Main Script
 
@@ -15,7 +15,7 @@ The scripts implement a structured workflow that moves from:
 
 This script performs the complete data preparation and analysis pipeline.
 
----
+----------------------------------------
 
 # Workflow Overview
 
@@ -37,10 +37,10 @@ A staging table is created from the raw dataset to allow transformations without
        X2	                Gender
        X3	                Education
        X4	                Marital_status
-       X6–X11	            Monthly delay indicators
+       X6–X11	            History of past payment
        Y	                Oct_default
 
----
+--------------------------------------------
 
 ## 2. Data Standardization
 
@@ -60,7 +60,7 @@ Monthly delay values are mapped to descriptive repayment states:
 * Minimum Due Cleared
 * 1–9 Month Delay
 
----
+------------------------------------------------
 
 ## 3. Data Profiling
 
@@ -74,7 +74,7 @@ Examples include:
 
 These views help understand the composition of the credit portfolio.
 
----
+-------------------------------------------------
 
 ## 4. Default Behavior Analysis
 
@@ -88,7 +88,7 @@ The analysis calculates:
 
 This highlights how increasing payment delays correlate with higher default risk.
 
----
+------------------------------------------------
 
 ## 5. Payment Trend Analysis
 
@@ -101,7 +101,7 @@ Accounts are categorized as:
 
 This provides an early indicator of financial deterioration.
 
----
+--------------------------------------------------
 
 ## 6. Customer Journey Classification
 
@@ -116,21 +116,21 @@ Possible classifications include:
 
 This simulates how lenders may track **customer risk progression over time**.
 
----
+---------------------------------------------------
 
 ## 7. Credit Risk Staging
 
 A rule-based risk staging framework segments the portfolio into three risk categories.
 
       Stage	    Description
-
+      -----     ------------
       Stage 1	Performing accounts
       Stage 2	Elevated risk accounts
       Stage 3	Non-performing accounts
 
 These stages allow the portfolio to be monitored by **risk severity and credit exposure**.
 
----
+-------------------------------------------------------
 
 # Output
 
