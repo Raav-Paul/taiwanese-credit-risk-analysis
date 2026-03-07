@@ -32,7 +32,7 @@ A staging table is created from the raw dataset to allow transformations without
 ### Example Transformations
 
        Original Column   	Renamed Column
-       
+       ---------------      ---------------
        X1	                Given_credit
        X2	                Gender
        X3	                Education
