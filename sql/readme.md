@@ -11,7 +11,7 @@ The scripts implement a structured workflow that moves from:
 
 # Main Script
 
-    taiwanese_defaults.sql
+[taiwanese_defaults.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/c51308c824ccccb7d3b5b6f09b465824145c7e6c/sql/taiwanese_defaults.sql)
 
 This script performs the complete data preparation and analysis pipeline.
 
