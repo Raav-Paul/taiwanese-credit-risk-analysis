@@ -195,33 +195,58 @@ Risk monitoring framework showing:
 ### Portfolio Overview
 ![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/878154243b6f804d8701b16d2988e87808eb4707/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
+## Key Insights
+- The portfolio contains 30,000 credit card accounts with total approved credit limits of approximately NT$5.02 billion.
+
+- The overall default rate is 22.1%, representing roughly 7,000 defaulted accounts.
+
+- The customer base is concentrated in the 25–40 age range, indicating that the portfolio primarily serves working-age borrowers.
+
+- Female customers represent the majority of the portfolio (~60%), while male customers account for roughly 40%.
+
+- Education levels show that undergraduate and graduate customers make up the majority of accounts, suggesting the portfolio is concentrated among relatively educated borrowers.
+
+--------------------------------------------------
+
+
+
 ### Defaulted Portfolio
 ![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png)
 
+
+
+--------------------------------------------------
 ### Credit Risk Staging and Financial Impact
 
 ![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
 
---------------------------------------------------
-
 ## Key Insights
 
-* Payment delay history strongly correlates with default probability.
-* Customers with longer delay periods fall disproportionately into **Stage 3 (Non-Performing)**.
-* A relatively small segment of the portfolio drives a large share of **defaulted credit exposure**.
+- The portfolio segmentation shows 66.6% performing accounts, 23% elevated-risk accounts, and 10.4% non-performing accounts.
 
+- Stage 3 (Non-Performing) accounts show the highest credit utilization at 58.67%, indicating a greater financial stress.
+
+- Stage 2 (Elevated Risk) accounts are comprised primarily of users with one-month payment delays, followed by those exhibiting minimum payment behavior.
+
+- Stage 2 (Elevated Risk) accounts show a high default rate of 64.67%, suggesting early delinquency signals are strong predictors of default.
+
+- Stage 3 accounts exhibit an even higher observed default rate of 69.55%, confirming the severity of extended payment delays.
+  
 --------------------------------------------------
 
 ## Purpose of the Project
 
-This project demonstrates how SQL can be used to:
+This project demonstrates how structured data analysis can be used to support credit portfolio monitoring and risk analysis.
 
-* clean and standardize financial datasets
-* construct analytical views for risk monitoring
-* build rule-based risk segmentation frameworks
-* support business intelligence dashboards
+### Key objectives include:
 
-It reflects a simplified version of workflows used in **credit risk analytics and financial portfolio monitoring**.
+- Cleaning and standardizing a financial dataset using SQL
+
+- Building analytical views to evaluate payment behavior and default patterns
+
+- Segmenting customers into risk stages for portfolio monitoring
+
+- Presenting insights through an interactive Power BI dashboard
 
 --------------------------------------------------
 
