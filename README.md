@@ -12,7 +12,7 @@ The workflow implements a structured workflow that moves from **raw transactiona
 
 ## Tools Used
 
-* SQL (MySQL)
+* [SQL (MySQL)](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/c51308c824ccccb7d3b5b6f09b465824145c7e6c/sql/taiwanese_defaults.sql)
 * Power BI
 * GitHub
 
