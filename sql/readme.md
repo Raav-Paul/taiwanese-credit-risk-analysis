@@ -11,7 +11,7 @@ The scripts implement a structured workflow that moves from:
 
 # Main Script
 
-`taiwanese_defaults.sql`
+    taiwanese_defaults.sql
 
 This script performs the complete data preparation and analysis pipeline.
 
