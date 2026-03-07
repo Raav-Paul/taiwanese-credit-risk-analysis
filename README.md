@@ -49,11 +49,13 @@ Key steps:
 
 Examples of transformations are as follows:
 
-    X1 → Given_credit
-    X2 → Gender
-    X3 → Education
-    X6–X11 → Monthly delay indicators
-    Y → Oct_default
+    Original   Transformed
+    ---------  -------------
+    X1          Given_credit
+    X2          Gender
+    X3          Education
+    X6–X11      History of past payment
+    Y           Oct_default
 
 ---------------------------------------------------
 
@@ -63,12 +65,12 @@ Several variables were converted into readable categorical values.
 
 Examples:
 
-    Field           Original Values Converted Values                            
-
-    Gender          1 / 2            Male / Female                               
-    Education       1 / 2 / 3 / 4    Graduate / Undergrad / High School / Others 
-    Marital Status  1 / 2 / 3       Married / Single / Unknown                  
-    Default         0 / 1            No / Yes                                    
+    Field              Original Values      Converted Values                            
+    ------             ----------------     ------------------
+    Gender              1 / 2                Male / Female                               
+    Education           1 / 2 / 3 / 4        Graduate / Undergrad / High School / Others 
+    Marital Status      1 / 2 / 3            Married / Single / Unknown                  
+    Default             0 / 1                No / Yes                                    
 
 Monthly delay indicators were also mapped into interpretable repayment behavior:
 
@@ -144,7 +146,7 @@ The project implements a simplified **credit risk staging model** inspired by co
 Accounts are classified into:
 
          Risk Stage                Description                           
- 
+         -----------               ------------
          Stage 1 – Performing      Customers meeting payment obligations 
          Stage 2 – Elevated Risk   Early delinquency signals             
          Stage 3 – Non-Performing  Severe payment delays                 
@@ -193,7 +195,7 @@ Risk monitoring framework showing:
 
 ## Dashboard Preview
 ### Portfolio Overview
-![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/878154243b6f804d8701b16d2988e87808eb4707/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
+![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/dec5cc44cec368aec407daa3b81251db7aa16c3e/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
 ## Key Insights
 
@@ -210,7 +212,7 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ### Defaulted Portfolio
-![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png)
+![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/dec5cc44cec368aec407daa3b81251db7aa16c3e/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png)
 
 ## Key Insights
 
@@ -231,7 +233,7 @@ Risk monitoring framework showing:
 
 ### Credit Risk Staging and Financial Impact
 
-![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
+![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/dec5cc44cec368aec407daa3b81251db7aa16c3e/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
 
 ## Key Insights
 
