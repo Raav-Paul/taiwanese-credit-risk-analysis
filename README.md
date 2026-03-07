@@ -192,11 +192,15 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ## Dashboard Preview
-![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/878154243b6f804d8701b16d2988e87808eb4707/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)    
+### Portfolio Overview
+![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/878154243b6f804d8701b16d2988e87808eb4707/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
-![Defaulted Portfolio](dashboard/screenshots/page2_default_analysis.png)
+### Defaulted Portfolio
+![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png)
 
-![Risk Staging Dashboard](dashboard/screenshots/page3_risk_staging.png)
+### Credit Risk Staging and Financial Impact
+
+![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
 
 --------------------------------------------------
 
