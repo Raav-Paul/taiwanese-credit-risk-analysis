@@ -196,6 +196,7 @@ Risk monitoring framework showing:
 ![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/878154243b6f804d8701b16d2988e87808eb4707/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
 ## Key Insights
+
 - The portfolio contains 30,000 credit card accounts with total approved credit limits of approximately NT$5.02 billion.
 
 - The overall default rate is 22.1%, representing roughly 7,000 defaulted accounts.
@@ -208,14 +209,26 @@ Risk monitoring framework showing:
 
 --------------------------------------------------
 
-
-
 ### Defaulted Portfolio
 ![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png)
 
+## Key Insights
+
+- The portfolio contains 6,636 defaulted accounts, representing the population examined in the default analysis layer.
+
+- The average credit exposure among defaulted accounts is approximately NT$130K, while the median exposure is NT$90K.
+
+- Most defaulted accounts show stable or improving payment trends, while a smaller segment shows clear deterioration.
+
+- Defaulted customers have an average age of roughly 36 years, similar to the overall portfolio average.
+
+- Education distribution among defaulted customers is led by undergraduate borrowers at 50.43%, followed by graduates at 30.83% and high-school borrowers at 18.73%.
+
+- The gender distribution among defaulted customers remains relatively balanced.
 
 
 --------------------------------------------------
+
 ### Credit Risk Staging and Financial Impact
 
 ![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e743cc1669cb47abeec0d9f923dd147a3ec49454/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
@@ -230,7 +243,7 @@ Risk monitoring framework showing:
 
 - Stage 2 (Elevated Risk) accounts show a high default rate of 64.67%, suggesting early delinquency signals are strong predictors of default.
 
-- Stage 3 accounts exhibit an even higher observed default rate of 69.55%, confirming the severity of extended payment delays.
+- Stage 3 accounts exhibit an even higher observed default rate of 69.55%, confirming the severity of extended payment delays, indicating greater financial stress and reduced repayment capacity.
   
 --------------------------------------------------
 
