@@ -6,7 +6,7 @@ This project analyzes credit card default risk using the [UCI Taiwanese Credit C
 
 The goal is to transform raw financial data into structured analytical views that support **credit risk monitoring, portfolio analysis, and business intelligence dashboards**.
 
-The workflow implements a structured workflow that moves from **raw transactional data > cleaned staging table > data profiling >  BI dashboards**.
+The workflow follows a structured workflow that moves from **raw transactional data > cleaned staging table > data profiling >  BI dashboards**.
 
 --------------------------------------------------
 
