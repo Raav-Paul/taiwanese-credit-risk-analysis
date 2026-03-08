@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project analyzes credit card default risk using the [UCI Taiwanese Credit Card Default dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
+This project analyzes credit card default risk using the [UCI Taiwanese Credit Card Default Dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
 
 The goal is to transform raw financial data into structured analytical views that support **credit risk monitoring, portfolio analysis, and business intelligence dashboards**.
 
@@ -20,7 +20,7 @@ The workflow implements a structured workflow that moves from **raw transactiona
 
 ## Dataset
 
-* Source: Taiwanese Credit Card Default dataset
+* Source: [Taiwanese Credit Card Default Dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
 * Records: ~30,000 customers
 * Features include:
 
