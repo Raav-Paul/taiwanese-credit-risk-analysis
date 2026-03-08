@@ -19,7 +19,7 @@ This script performs the complete data preparation and analysis pipeline.
 
 # Workflow Overview
 
-## 1. Data Staging
+##  Data Staging
 
 A staging table is created from the raw dataset to allow transformations without modifying the original data.
 
@@ -37,12 +37,12 @@ A staging table is created from the raw dataset to allow transformations without
        X2	                Gender
        X3	                Education
        X4	                Marital_status
-       X6–X11	            History of past payment
+       X6-X11	            History of past payment
        Y	                Oct_default
 
 --------------------------------------------
 
-## 2. Data Standardization
+##  Data Standardization
 
 Encoded numeric fields are converted into readable categorical values.
 
@@ -58,11 +58,11 @@ Monthly delay values are mapped to descriptive repayment states:
 * Dormant
 * Balance Cleared
 * Minimum Due Cleared
-* 1–9 Month Delay
+* 1-9 Month Delay
 
 ------------------------------------------------
 
-## 3. Data Profiling
+##  Data Profiling
 
 Views are created to explore demographic and portfolio characteristics.
 
@@ -76,7 +76,7 @@ These views help understand the composition of the credit portfolio.
 
 -------------------------------------------------
 
-## 4. Default Behavior Analysis
+##  Default Behavior Analysis
 
 A view evaluates the relationship between **payment delay history and default probability**.
 
@@ -90,7 +90,7 @@ This highlights how increasing payment delays correlate with higher default risk
 
 ------------------------------------------------
 
-## 5. Payment Trend Analysis
+##  Payment Trend Analysis
 
 A payment trend view classifies repayment behavior based on recent payment patterns.
 
@@ -103,7 +103,7 @@ This provides an early indicator of financial deterioration.
 
 --------------------------------------------------
 
-## 6. Customer Journey Classification
+##  Customer Journey Classification
 
 Customers are grouped into behavioral journey stages based on repayment behavior and default outcomes.
 
@@ -118,7 +118,7 @@ This simulates how lenders may track **customer risk progression over time**.
 
 ---------------------------------------------------
 
-## 7. Credit Risk Staging
+##  Credit Risk Staging
 
 A rule-based risk staging framework segments the portfolio into three risk categories.
 
