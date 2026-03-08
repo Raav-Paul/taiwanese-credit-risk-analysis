@@ -205,7 +205,7 @@ Risk monitoring framework showing:
 
 - The customer base is concentrated in the 25–40 age range, indicating that the portfolio primarily serves working-age borrowers.
 
-- Female customers represent the majority of the portfolio (~60%), while male customers account for roughly 40%.
+- Female customers represent a slight majority of the portfolio at 53.89%, while male customers account for roughly 46%.
 
 - Education levels show that undergraduate and graduate customers make up the majority of accounts, suggesting the portfolio is concentrated among relatively educated borrowers.
 
