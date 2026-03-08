@@ -21,7 +21,7 @@ The workflow implements a structured workflow that moves from **raw transactiona
 ## Dataset
 
 * Source: [Taiwanese Credit Card Default Dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
-* Records: ~30,000 customers
+* Records: 30,000 customers
 * Features include:
 
   * Credit limit
