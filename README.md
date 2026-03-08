@@ -37,7 +37,7 @@ The dataset tracks customer payment behavior over several months to analyze **de
 
 ## Project Workflow
 
-### 1. Data Staging
+###  Data Staging
 
 A staging table is created from the raw dataset to allow safe transformation and cleaning.
 
@@ -59,7 +59,7 @@ Examples of transformations are as follows:
 
 ---------------------------------------------------
 
-### 2. Data Standardization
+###  Data Standardization
 
 Several variables were converted into readable categorical values.
 
@@ -81,7 +81,7 @@ Monthly delay indicators were also mapped into interpretable repayment behavior:
 
 --------------------------------------------------
 
-### 3. Data Profiling
+###  Data Profiling
 
 Exploratory profiling views were created to understand portfolio characteristics:
 
@@ -97,7 +97,7 @@ Example profiling output:
 
 --------------------------------------------------
 
-### 4. Default Behavior Analysis
+###  Default Behavior Analysis
 
 The project evaluates how **payment delay history relates to default probability**.
 
@@ -111,7 +111,7 @@ This highlights how **increasing payment delays correlate strongly with higher d
 
 --------------------------------------------------
 
-### 5. Payment Trend Monitoring
+###  Payment Trend Monitoring
 
 A payment trend view evaluates repayment momentum using recent payment history.
 
@@ -124,7 +124,7 @@ This provides an early signal of **potential financial deterioration**.
 
 --------------------------------------------------
 
-### 6. Customer Journey Mapping
+###  Customer Journey Mapping
 
 A journey framework categorizes customers based on payment behavior and default outcome.
 
