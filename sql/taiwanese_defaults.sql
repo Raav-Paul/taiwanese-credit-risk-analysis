@@ -23,18 +23,18 @@ FROM
 
 -- Renaming columns
 ALTER TABLE default_table_staging
-  Change MyUnknownColumn ID INT,
+  CHANGE MyUnknownColumn ID INT,
   CHANGE X1 Given_credit INT,
-  CHANGE X2 Gender INT,
-  CHANGE X3 Education INT,
-  CHANGE X4 Marital_status INT,
+  CHANGE X2 Gender VARCHAR(10),
+  CHANGE X3 Education VARCHAR(20),
+  CHANGE X4 Marital_status VARCHAR(20),
   CHANGE X5 Age INT,
-  CHANGE X6 Sept_delay INT,
-  CHANGE X7 August_delay INT,
-  CHANGE X8 July_delay INT,
-  CHANGE X9 June_delay INT,
-  CHANGE X10 May_delay INT,
-  CHANGE X11 April_delay INT,
+  CHANGE X6 Sept_delay VARCHAR(50),
+  CHANGE X7 August_delay VARCHAR(50),
+  CHANGE X8 July_delay VARCHAR(50),
+  CHANGE X9 June_delay VARCHAR(50),
+  CHANGE X10 May_delay VARCHAR(50),
+  CHANGE X11 April_delay VARCHAR(50),
   CHANGE X12 Sept_bill INT,
   CHANGE X13 August_bill INT,
   CHANGE X14 July_bill INT,
@@ -47,18 +47,14 @@ ALTER TABLE default_table_staging
   CHANGE X21 June_payment INT,
   CHANGE X22 May_payment INT,
   CHANGE X23 April_payment INT,
-  CHANGE Y Oct_default INT;
-  
+  CHANGE Y Oct_default VARCHAR(20);
+
 SELECT 
     *
 FROM
     default_table_staging;
 
-
--- Making the gender, education, marital_status, delays and default more readable
--- Gender
-ALTER TABLE default_table_staging 
-MODIFY COLUMN Gender VARCHAR(10);
+-- Gender Update
 UPDATE default_table_staging 
 SET 
     Gender = CASE
@@ -70,11 +66,8 @@ SELECT
     *
 FROM
     default_table_staging;
-  
-  
--- Education  
-ALTER TABLE default_table_staging 
-MODIFY COLUMN Education VARCHAR(20);
+
+-- Education Update  
 UPDATE default_table_staging 
 SET 
     Education = CASE
@@ -84,7 +77,7 @@ SET
         WHEN Education = 4 THEN 'Others'
         ELSE 'Unknown'
     END;
-  
+
 -- Auditing age and education
 SELECT 
     age, education, COUNT(age)
@@ -97,12 +90,9 @@ GROUP BY age , education;
   -- Found 120 entries labeled 'Graduate' at age 22.
   -- This is statistically very unlikely given the typical graduation timeline.
   -- Possible causes: misreporting, recording errors, or loose classification by banks/consumers.
-  -- These entries are not removed or flagged and are included as such, as it is believed that it wont affect the overall analyis.
- 
- 
-  -- Marital Status
-ALTER TABLE default_table_staging 
-MODIFY COLUMN Marital_status VARCHAR(20);
+  -- These entries are not removed or flagged and are included as such, as it is believed that it won't affect the overall analysis.
+  
+-- Marital Status Update
 UPDATE default_table_staging 
 SET 
     Marital_status = CASE
@@ -115,11 +105,10 @@ SELECT
     *
 FROM
     default_table_staging;
-  
--- Delays
--- September 
-ALTER TABLE default_table_staging 
-MODIFY COLUMN Sept_delay VARCHAR(50);
+
+-- Delays Update
+
+-- September Delay
 UPDATE default_table_staging 
 SET 
     Sept_delay = CASE
@@ -137,15 +126,13 @@ SET
         WHEN Sept_delay = 9 THEN '9 Months Delay'
         ELSE 'Unknown'
     END;
-  
+
 SELECT 
     *
 FROM
     default_table_staging;
-  
--- August
-ALTER TABLE default_table_staging 
-MODIFY COLUMN August_delay VARCHAR(50);
+
+-- August Delay
 UPDATE default_table_staging 
 SET 
     August_delay = CASE
@@ -164,9 +151,7 @@ SET
         ELSE 'Unknown'
     END;
 
--- July
-ALTER TABLE default_table_staging 
-MODIFY COLUMN July_delay VARCHAR(50);
+-- July Delay
 UPDATE default_table_staging 
 SET 
     July_delay = CASE
@@ -185,9 +170,7 @@ SET
         ELSE 'Unknown'
     END;
 
--- June
-ALTER TABLE default_table_staging 
-MODIFY COLUMN June_delay VARCHAR(50);
+-- June Delay
 UPDATE default_table_staging 
 SET 
     June_delay = CASE
@@ -206,9 +189,7 @@ SET
         ELSE 'Unknown'
     END;
 
--- May
-ALTER TABLE default_table_staging 
-MODIFY COLUMN May_delay VARCHAR(50);
+-- May Delay
 UPDATE default_table_staging 
 SET 
     May_delay = CASE
@@ -227,9 +208,7 @@ SET
         ELSE 'Unknown'
     END;
 
--- April
-ALTER TABLE default_table_staging 
-MODIFY COLUMN April_delay VARCHAR(50);
+-- April Delay
 UPDATE default_table_staging 
 SET 
     April_delay = CASE
@@ -248,14 +227,7 @@ SET
         ELSE 'Unknown'
     END;
 
-SELECT 
-    *
-FROM
-    default_table_staging;
-
--- October default
-ALTER TABLE default_table_staging 
-MODIFY COLUMN Oct_default VARCHAR(20);
+-- October Default
 UPDATE default_table_staging 
 SET 
     Oct_default = CASE
@@ -263,9 +235,10 @@ SET
         WHEN Oct_default = 1 THEN 'Yes'
         ELSE 'Unknown'
     END;
+
 SELECT 
-    *
-FROM
+    * 
+FROM 
     default_table_staging;
   
   
@@ -326,58 +299,6 @@ CREATE VIEW payment_trend AS
                 'Declining Trend'
             ELSE 'Stable or Improving'
         END AS Payment_Trend
-    FROM
-        default_table_staging;
-
-
--- Customer Journey Map
-CREATE VIEW journey_map AS
-    SELECT 
-        ID,
-        Sept_delay AS Delay,
-        Oct_default AS Defaulted,
-        CASE
-            WHEN
-                Sept_delay IN ('Balance Cleared' , 'Minimum Due Cleared')
-                    AND Oct_default IN ('No' , 'Unknown')
-            THEN
-                'Healthy Customer Journey'
-            WHEN
-                Sept_delay = '1 Month Delay'
-                    AND Oct_default IN ('No' , 'Unknown')
-            THEN
-                'Early Warning Stage'
-            WHEN
-                Sept_delay = 'Dormant'
-                    AND Oct_default IN ('No' , 'Unknown')
-            THEN
-                'Early Warning Stage'
-            WHEN
-                Sept_delay = '1 Month Delay'
-                    AND Oct_default = 'Yes'
-            THEN
-                'Intervention Required Stage'
-            WHEN Sept_delay IN ('2 Months Delay' , '3 Months Delay') THEN 'Intervention Required Stage'
-            WHEN
-                Sept_delay = 'Dormant'
-                    AND Oct_default = 'Yes'
-            THEN
-                'Intervention Required Stage'
-            WHEN
-                Sept_delay IN ('Balance Cleared' , 'Minimum Due Cleared')
-                    AND Oct_default = 'Yes'
-            THEN
-                'Intervention Required Stage'
-            WHEN
-                Sept_delay IN ('4 Months Delay' , '5 Months Delay',
-                    '6 Months Delay',
-                    '7 Months Delay',
-                    '8 Months Delay',
-                    '9 Months Delay')
-            THEN
-                'Intervention Required Stage'
-            ELSE 'Assessment Required'
-        END AS Journey_Stage
     FROM
         default_table_staging;
 
