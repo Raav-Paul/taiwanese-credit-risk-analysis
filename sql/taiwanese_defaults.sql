@@ -323,4 +323,4 @@ CREATE OR REPLACE VIEW risk_stage AS
             ELSE 'Unclassified'
         END AS Risk_Stage
     FROM
-        default_table_staging
+        default_table_staging;
