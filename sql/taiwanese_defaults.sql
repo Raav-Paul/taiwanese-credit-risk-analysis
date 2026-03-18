@@ -1,25 +1,20 @@
 -- Creating a staging table 
 CREATE TABLE default_table_staging LIKE default_table;  
-INSERT INTO 
-	default_table_staging 
-SELECT 
-	* 
-FROM default_table;
+
+INSERT INTO default_table_staging 
+SELECT *  FROM default_table;
 
 -- Deleting the extra header row
 DELETE FROM default_table_staging 
 WHERE
     MyUnknownColumn = 'ID';
+    
 SELECT 
     *
 FROM
     default_table_staging
 WHERE
     MyUnknownColumn = 'ID';
-SELECT 
-    *
-FROM
-    default_table_staging;
 
 -- Renaming columns
 ALTER TABLE default_table_staging
@@ -48,11 +43,6 @@ ALTER TABLE default_table_staging
   CHANGE X22 May_payment INT,
   CHANGE X23 April_payment INT,
   CHANGE Y Oct_default VARCHAR(20);
-
-SELECT 
-    *
-FROM
-    default_table_staging;
 
 -- Gender Update
 UPDATE default_table_staging 
@@ -86,13 +76,12 @@ FROM
 WHERE
     Education = 'Graduate' AND Age IN (22)
 GROUP BY age , education;
-  -- AUDIT NOTE:
-  -- Found 120 entries labeled 'Graduate' at age 22.
-  -- This is statistically very unlikely given the typical graduation timeline.
-  -- Possible causes: misreporting, recording errors, or loose classification by banks/consumers.
-  -- These entries are not removed or flagged and are included as such, as it is believed that it won't affect the overall analysis.
+-- AUDIT NOTE:
+-- Found 120 entries labeled 'Graduate' at age 22.
+-- This is statistically very unlikely given the typical graduation timeline.
+-- Possible causes: misreporting, recording errors, or loose classification by banks/consumers.
+-- These entries are not removed or flagged and are included as such, as it is believed that it won't affect the overall analysis.
   
--- Marital Status Update
 UPDATE default_table_staging 
 SET 
     Marital_status = CASE
@@ -107,7 +96,6 @@ FROM
     default_table_staging;
 
 -- Delays Update
-
 -- September Delay
 UPDATE default_table_staging 
 SET 
@@ -237,8 +225,8 @@ SET
     END;
 
 SELECT 
-    * 
-FROM 
+    *
+FROM
     default_table_staging;
   
   
