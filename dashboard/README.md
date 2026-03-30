@@ -76,3 +76,18 @@ Risk monitoring framework showing:
 - Stage 2 (Elevated Risk) accounts are comprised primarily of users with one-month payment delays, followed by those exhibiting minimum payment behavior.
 - Stage 2 (Elevated Risk) accounts show a high default rate of 64.67%, suggesting early delinquency signals are strong predictors of default.
 - Stage 3 accounts exhibit an even higher observed default rate of 69.55%, confirming the severity of extended payment delays, indicating greater financial stress and reduced repayment capacity.
+
+    
+--------------------------------------------------
+
+## Business Implications
+ **Finding:**    23.98% of the portfolio has 64.67% default rate.                  
+ **Suggestion:** Should be treated as the primary intervention segment.
+ 
+ **Finding:**    Early delinquency (1-month delay) is a strong default signal.    
+ **Suggestion:** Trigger monitoring immediately.
+
+ **Finding:**    Stage 3 shows the highest utilization.                        
+ **Suggestion:** Restrict credit exposure for these accounts.
+
+ ***Targeting Stage 2 can reduce losses more efficiently than focusing only on Stage 3.***
