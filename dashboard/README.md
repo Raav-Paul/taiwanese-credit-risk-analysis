@@ -8,7 +8,7 @@
 
 ## Portfolio Overview
 
-High-level portfolio metrics including:
+High-level portfolio metrics, including:
 
 - Customer base size
 - Total credit exposure
