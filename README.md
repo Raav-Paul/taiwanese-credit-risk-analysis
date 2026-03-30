@@ -3,17 +3,15 @@
 ## Overview
 
 This project analyzes credit card default risk using the [UCI Taiwanese Credit Card Default Dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
-
-The goal is to transform raw financial data into structured analytical views that support **credit risk monitoring, portfolio analysis, and business intelligence dashboards**.
-
-The workflow follows a structured workflow that moves from **raw transactional data > cleaned staging table > data profiling >  BI dashboards**.
+The objective is to build an interpretable credit risk monitoring framework that converts repayment behavior into actionable risk segments for early default detection.
+The workflow follows a structured workflow that moves from raw transactional data > cleaned staging table > data profiling >  BI dashboards.
 
 --------------------------------------------------
 
 ## Tools Used
 
 - [SQL (MySQL)](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/c51308c824ccccb7d3b5b6f09b465824145c7e6c/sql/taiwanese_defaults.sql)
-- Power BI
+- [Power BI](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/1ab261db761114fa2021b1e1b19f791ad03c682d/dashboard/Taiwanese%20Defaults.pbix)
 - GitHub
 
 --------------------------------------------------
@@ -143,7 +141,7 @@ These stages allow portfolio segmentation and risk monitoring.
 The SQL outputs feed a Power BI dashboard structured into three analytical layers.
 
 ## Portfolio Overview
-High-level portfolio metrics including:
+High-level portfolio metrics, including:
 - Customer base size
 - Total credit exposure
 - Exposure at default
@@ -205,13 +203,28 @@ Risk monitoring framework showing:
   
 --------------------------------------------------
 
+## Business Suggestions based on Findings
+ **Finding:**    23.98% of the portfolio has 64.67% default rate.                  
+ **Suggestion:** Should be treated as the primary intervention segment.
+ 
+ **Finding:**    Early delinquency (1-month delay) is a strong default signal.    
+ **Suggestion:** Trigger monitoring immediately.
+
+ **Finding:**    Stage 3 shows the highest utilization.                        
+ **Suggestion:** Restrict credit exposure for these accounts.
+
+ ***Targeting Stage 2 can reduce losses more efficiently than focusing only on Stage 3.***
+
+
+----------------------------------------------------
+
 ## Purpose of the Project
-This project demonstrates how structured data analysis can be used to support credit portfolio monitoring and risk analysis.
+This project demonstrates how structured data analysis can support credit portfolio monitoring and risk analysis.
 
 ### Key objectives include:
 - Cleaning and standardizing a financial dataset using SQL
 - Building analytical views to evaluate payment behavior and default patterns
-- Segmenting customers into risk stages for portfolio monitoring
+- Segmenting customers into Days Past Due(DPD) delinquency buckets for risk staging framework
 - Presenting insights through an interactive Power BI dashboard
 
 --------------------------------------------------
