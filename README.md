@@ -4,9 +4,15 @@
 
 This project analyzes credit card default risk using the [UCI Taiwanese Credit Card Default Dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).  
 
-The objective is to build an interpretable credit risk monitoring framework that converts repayment behavior into actionable risk segments for early default detection.   
+The objective is to build an interpretable credit risk monitoring framework that converts repayment behavior into actionable risk segments for early default detection and loss mitigation.  
 
-The workflow follows a structured pipeline that moves from raw transactional data > cleaned staging table > data profiling >  BI dashboards.
+The workflow follows a structured pipeline that moves from: raw transactional data > cleaned staging table > data profiling >  BI dashboards.
+
+
+### Historical Context: Taiwan's 2005 Double-Card Crisis
+
+This dataset captures credit card behavior during Taiwan's 2005 card debt crisis, when more than 400,000 cardholders became unable to repay their debts due to predatory lending practices and a lack of regulatory oversight. Banks over-issued cards to unqualified applicants, including students without jobs, while cardholders over-extended themselves at 17-20% interest rates. 
+
 
 --------------------------------------------------
 
@@ -22,8 +28,8 @@ The workflow follows a structured pipeline that moves from raw transactional dat
 
 - Source: [Taiwanese Credit Card Default Dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
 - Records: 30,000 customers
+- Geographic Context: Taiwan, Mid-2005 financial environment
 - Features include:
-
   - Credit limit
   - Demographics (age, gender, education, marital status)
   - Monthly payment delays
@@ -31,7 +37,7 @@ The workflow follows a structured pipeline that moves from raw transactional dat
   - Monthly payments
   - Default status
 
-The dataset tracks customer payment behavior over several months to analyze **default risk patterns**.
+The dataset tracks customer payment behavior over 6 months to analyze **default risk patterns**.
 
 --------------------------------------------------
 
