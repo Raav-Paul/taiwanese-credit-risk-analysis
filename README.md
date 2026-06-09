@@ -228,14 +228,4 @@ Risk monitoring framework showing:
 
 ----------------------------------------------------
 
-## Purpose of the Project
-This project demonstrates how structured data analysis can support credit portfolio monitoring and risk analysis.
-
-### Key objectives include:
-- Cleaning and standardizing a financial dataset using SQL
-- Building analytical views to evaluate payment behavior and default patterns
-- Segmenting customers into Days Past Due(DPD) delinquency buckets to construct risk staging framework
-- Presenting insights through an interactive Power BI dashboard
-
---------------------------------------------------
 
