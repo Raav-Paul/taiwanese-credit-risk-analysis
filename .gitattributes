@@ -3,4 +3,4 @@
 *.pbix linguist-vendored
 *.png linguist-vendored
 *.jpg linguist-vendored
-*.sql linguist-language=SQL
+
