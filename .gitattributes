@@ -1,6 +1,7 @@
-*.csv linguist-vendored
-*.xlsx linguist-vendored
-*.pbix linguist-vendored
 *.png linguist-vendored
 *.jpg linguist-vendored
-
+*.jpeg linguist-vendored
+*.csv linguist-vendored
+*.xls linguist-vendored
+*.xlsx linguist-vendored
+*.pbix linguist-vendored
