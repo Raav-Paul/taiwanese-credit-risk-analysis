@@ -40,24 +40,6 @@ CREATE VIEW chance_of_default AS
     ORDER BY Default_Percentage DESC;
 
 
--- Payment Trend
-CREATE VIEW payment_trend AS
-    SELECT 
-        ID,
-        July_payment,
-        August_payment,
-        Sept_payment,
-        CASE
-            WHEN
-                Sept_payment < August_payment
-                    AND August_payment < July_payment
-            THEN
-                'Declining Trend'
-            ELSE 'Stable or Improving'
-        END AS Payment_Trend
-    FROM
-        default_table_staging;
-
 -- Risk Stages
 CREATE OR REPLACE VIEW risk_stage AS
     SELECT 
