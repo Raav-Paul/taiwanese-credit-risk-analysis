@@ -9,11 +9,14 @@ The scripts implement a structured workflow that moves from:
 
 --------------------------------------
 
-# Main Script
+# Scripts Used
 
 [01_load.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/01_load.sql)
+
 [02_clean.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/02_clean.sql)
+
 [03_standardize.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/03_standardize.sql)
+
 [04_profiling.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/04_profiling.sql)
 
 ----------------------------------------
