@@ -18,7 +18,7 @@ This dataset captures credit card behavior during Taiwan's 2005 card debt crisis
 
 ## Tools Used
 
-- [SQL (MySQL)](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/c51308c824ccccb7d3b5b6f09b465824145c7e6c/sql/taiwanese_defaults.sql)
+- MySQL
 - [Power BI](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/1ab261db761114fa2021b1e1b19f791ad03c682d/dashboard/Taiwanese%20Defaults.pbix)
 - GitHub
 
