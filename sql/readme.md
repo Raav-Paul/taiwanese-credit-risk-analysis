@@ -5,15 +5,16 @@ This folder contains the SQL pipeline used to clean, transform, and analyze the
 
 The scripts implement a structured workflow that moves from:
 
-**Raw Data Ingestion > Data Standardization > Analytical Views > Risk Segmentation**
+**Raw Data Intake > Data Standardization > Analytical Views > Risk Segmentation**
 
 --------------------------------------
 
 # Main Script
 
-[taiwanese_defaults.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/c51308c824ccccb7d3b5b6f09b465824145c7e6c/sql/taiwanese_defaults.sql)
-
-This script performs the complete data preparation and analysis pipeline.
+[01_load.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/01_load.sql)
+[02_clean.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/02_clean.sql)
+[03_standardize.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/03_standardize.sql)
+[04_profiling.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/04_profiling.sql)
 
 ----------------------------------------
 
