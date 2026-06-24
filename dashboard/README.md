@@ -38,7 +38,7 @@ Risk monitoring framework showing:
 
 ## Dashboard Preview
 ### Portfolio Overview
-[Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/dec5cc44cec368aec407daa3b81251db7aa16c3e/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
+![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/dec5cc44cec368aec407daa3b81251db7aa16c3e/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
 ## Key Insights
 
