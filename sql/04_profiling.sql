@@ -20,26 +20,6 @@ CREATE VIEW defaults_and_nodefaults AS
     GROUP BY Oct_default;
 
 
--- Chance Of Default Based on Delay History
-CREATE VIEW chance_of_default AS
-    SELECT 
-        Sept_delay,
-        COUNT(*) AS Total_Count,
-        SUM(CASE
-            WHEN Oct_default = 'Yes' THEN 1
-            ELSE 0
-        END) AS Defaults,
-        ROUND(100.0 * SUM(CASE
-                    WHEN Oct_default = 'Yes' THEN 1
-                    ELSE 0
-                END) / COUNT(*),
-                2) AS Default_Percentage
-    FROM
-        default_table_staging
-    GROUP BY Sept_delay
-    ORDER BY Default_Percentage DESC;
-
-
 -- Risk Stages
 CREATE OR REPLACE VIEW risk_stage AS
     SELECT 
