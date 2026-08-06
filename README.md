@@ -142,7 +142,7 @@ This framework helps simulate how lenders may monitor **customer risk progressio
 
 --------------------------------------------------
 
-### 7. Risk Staging Framework
+###  Risk Staging Framework
 The project implements a simplified **credit risk staging model** inspired by common banking frameworks.
 Accounts are classified into:
 
