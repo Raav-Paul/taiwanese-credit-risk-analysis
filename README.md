@@ -115,9 +115,9 @@ Example profiling output:
 ###  Default Behavior Analysis
 The project evaluates how **payment delay history relates to default probability**.
 A view calculates:
-* total accounts per delay category
-* number of defaults
-* default percentage
+* Total accounts per delay category
+* Number of defaults
+* Default percentage
 This highlights how **increasing payment delays correlate strongly with higher default risk**.
 
 --------------------------------------------------
@@ -169,16 +169,16 @@ High-level portfolio metrics, including:
 
 ### Defaulted Portfolio Analysis
 Focused analysis of accounts that defaulted:
-* payment deterioration trends
-* demographic breakdown
-* credit exposure patterns
+* Payment deterioration trends
+* Demographic breakdown
+* Credit exposure patterns
 
 ### Credit Risk Staging
 Risk monitoring framework showing:
-- portfolio distribution across risk stages
-- exposure concentration
-- credit utilization by stage
-- default rates by risk stage
+- Portfolio distribution across risk stages
+- Exposure concentration
+- Credit utilization by stage
+- Default rates by risk stage
 
 
 --------------------------------------------------
