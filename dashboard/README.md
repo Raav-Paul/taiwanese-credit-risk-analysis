@@ -43,18 +43,18 @@ Risk monitoring framework showing:
 ## Key Insights
 
 - **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**.
+- **Revolving credit share** accounts for **49.12% of customer accounts**, representing approximately **NT$2.27 Billion** in revolving credit.
 - **The overall default rate** is **22.1%**, representing **6,636** defaulted accounts.
 - **The customer base** is **concentrated** in the **20-40 age range**, **indicating** that the portfolio primarily serves **working-age borrowers**.
-- **Female customers** represent a slight majority of the portfolio at **53.89%**, while **male customers** account for **46.11%**.
-- **Education levels** show that **undergraduate** and **graduate** customers make up the **majority** of accounts, suggesting the portfolio is **concentrated** among relatively **educated borrowers**.
-
+- **Female customers** represent a slight majority of the portfolio at **60.37%**, while **male customers** account for **39.63%**.
+- **Education levels** are concentrated among **undergraduate** and **graduate customers**, representing **47.51%** and **35.84%** of the portfolio respectively.
 --------------------------------------------------
 
 ### Defaulted Portfolio
 ![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/ff0a2bc070e1e478d3e20fb7d3a9af9118320ae0/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png).
 ## Key Insights
 
-- **The portfolio** contains **6,636 defaulted accounts**, representing the population examined in the default analysis layer.
+- **The portfolio** contains **22.12%** or **6,636 defaulted accounts**, representing the population examined in the default analysis layer.
 - **The average credit exposure** among defaulted accounts is approximately **NT$130K**, while the **median exposure** is **NT$90K**.
 - **Defaulted customers** have an **average age** of **roughly 36 years**, similar to the overall portfolio average.
 - **Education distribution** among defaulted customers is **led** by **undergraduate borrowers at 50.43%**, followed by **graduates at 30.83%** and **high-school borrowers at 18.73%**.
