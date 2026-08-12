@@ -38,7 +38,7 @@ Risk monitoring framework showing:
 
 ## Dashboard Preview
 ### Portfolio Overview
-![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/bf7c1f4cbafe6b4ecf022d1ec6d4532c58976a44/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
+![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/ff0a2bc070e1e478d3e20fb7d3a9af9118320ae0/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
 ## Key Insights
 
@@ -51,7 +51,7 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ### Defaulted Portfolio
-![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/be41f7bf2b2f24018f7cfdebfb00c48bc9db6a23/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png).
+![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/ff0a2bc070e1e478d3e20fb7d3a9af9118320ae0/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png).
 ## Key Insights
 
 - **The portfolio** contains **6,636 defaulted accounts**, representing the population examined in the default analysis layer.
