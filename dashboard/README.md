@@ -38,12 +38,12 @@ Risk monitoring framework showing:
 
 ## Dashboard Preview
 ### Portfolio Overview
-![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/ff0a2bc070e1e478d3e20fb7d3a9af9118320ae0/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
+![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/d62234b9029f8adfe2d2b60a056fb9627182bdca/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
 ## Key Insights
 
 - **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**.
-- **Revolving credit share** accounts for **49.12% of customer accounts**, representing approximately **NT$2.27 Billion** in revolving credit.
+- **Revolving credit share** accounts for **49.12% of customer accounts**, representing approximately **NT$1.16 Billion** in revolving credit.
 - **The overall default rate** is **22.1%**, representing **6,636** defaulted accounts.
 - **The customer base** is **concentrated** in the **20-40 age range**, **indicating** that the portfolio primarily serves **working-age borrowers**.
 - **Female customers** represent a slight majority of the portfolio at **60.37%**, while **male customers** account for **39.63%**.
