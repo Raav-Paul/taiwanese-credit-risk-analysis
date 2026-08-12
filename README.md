@@ -183,31 +183,30 @@ Risk monitoring framework showing:
 
 --------------------------------------------------
 
+
 ## Dashboard Preview
 ### Portfolio Overview
-![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/bf7c1f4cbafe6b4ecf022d1ec6d4532c58976a44/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
+![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/d62234b9029f8adfe2d2b60a056fb9627182bdca/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
 ## Key Insights
+
 - **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**.
+- **Revolving credit share** accounts for **49.12% of customer accounts**, representing approximately **NT$1.16 Billion** in revolving credit.
 - **The overall default rate** is **22.1%**, representing **6,636** defaulted accounts.
 - **The customer base** is **concentrated** in the **20-40 age range**, **indicating** that the portfolio primarily serves **working-age borrowers**.
-- **Female customers** represent a slight majority of the portfolio at **53.89%**, while **male customers** account for **46.11%**.
-- **Education levels** show that **undergraduate** and **graduate** customers make up the **majority** of accounts, suggesting the portfolio is **concentrated** among relatively **educated borrowers**.
-
-
+- **Female customers** represent a slight majority of the portfolio at **60.37%**, while **male customers** account for **39.63%**.
+- **Education levels** are concentrated among **undergraduate** and **graduate customers**, representing **47.51%** and **35.84%** of the portfolio respectively.
 --------------------------------------------------
 
 ### Defaulted Portfolio
-![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/be41f7bf2b2f24018f7cfdebfb00c48bc9db6a23/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png)
-
+![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/ff0a2bc070e1e478d3e20fb7d3a9af9118320ae0/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png).
 ## Key Insights
-- **The portfolio** contains **6,636 defaulted accounts**, representing the population examined in the default analysis layer.
+
+- **The portfolio** contains **22.12%** or **6,636 defaulted accounts**, representing the population examined in the default analysis layer.
 - **The average credit exposure** among defaulted accounts is approximately **NT$130K**, while the **median exposure** is **NT$90K**.
 - **Defaulted customers** have an **average age** of **roughly 36 years**, similar to the overall portfolio average.
 - **Education distribution** among defaulted customers is **led** by **undergraduate borrowers at 50.43%**, followed by **graduates at 30.83%** and **high-school borrowers at 18.73%**.
 - **The gender distribution** among defaulted customers **remains** relatively **balanced**.
-
-
 --------------------------------------------------
 
 ### Credit Risk Staging and Financial Impact
@@ -219,9 +218,7 @@ Risk monitoring framework showing:
 - **Stage 3** accounts show the **highest credit utilization at 58.67%**, indicating a **greater financial stress**.
 - **Stage 2** accounts are comprised **primarily** of users with **one-month payment delays**, followed by those exhibiting **minimum payment behavior**.
 - **Stage 2** accounts show a **high default rate of 64.67%**, **suggesting** early delinquency signals are **strong predictors of default**.
-- **Stage 3** accounts exhibit an even **higher observed default rate of 69.55%**, confirming the severity of extended payment delays, **indicating greater financial stress and reduced repayment capacity**.
-
-  
+- **Stage 3** accounts exhibit an even **higher observed default rate of 69.55%**, confirming the severity of extended payment delays, **indicating greater financial stress and reduced repayment capacity**.  
 --------------------------------------------------
 
 ## Business Implications
