@@ -163,7 +163,7 @@ The SQL outputs feed a Power BI dashboard structured into three analytical layer
 High-level portfolio metrics, including:
 - Customer base size
 - Total credit exposure
-- Exposure at default
+- Revolving Credit Share
 - Portfolio default rate
 - Customer demographic distributions
 
