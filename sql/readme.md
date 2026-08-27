@@ -5,7 +5,7 @@ This folder contains the SQL pipeline used to clean, transform, and analyze the
 
 The scripts implement a structured workflow that moves from:
 
-**Raw Data Intake > Data Standardization > Analytical Views > Risk Segmentation**
+**Raw Data Intake > Data Staging > Data Standardization > Analytical Views**
 
 --------------------------------------
 
