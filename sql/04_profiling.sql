@@ -20,6 +20,7 @@ CREATE VIEW defaults_and_nodefaults AS
     GROUP BY Oct_default;
 
 
+
 -- Risk Stages
 CREATE OR REPLACE VIEW risk_stage AS
     SELECT 
