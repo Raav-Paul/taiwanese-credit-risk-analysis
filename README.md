@@ -182,25 +182,22 @@ Risk monitoring framework showing:
 
 
 ## Key Insights
-- **The portfolio**  shows **66.58%** performing accounts, **31.87%** elevated-risk accounts, and **1.54%** non-performing accounts.
-- **Stage 3** accounts show the **highest credit utilization at 62.30%**, indicating a **greater financial stress**.
-- **Stage 2** accounts are comprised **primarily** of users with **one-month and two-month payment delays**, followed by **previously cleared or dormant accounts** that subsequently **defaulted.**
-- **Stage 2** accounts show a **high default rate of 65.92%**, **suggesting** early delinquency signals are **strong predictors of default**.
+- **The portfolio** shows **77.27%** performing accounts, with a 13.83% default rate, indicating over **1 in 8** performing customers are jumping straight into default within 30 days **without any early-warning signs**.
+- **Stage 3** accounts show the **highest credit utilization at 62.30%**, indicating a **greater financial stress**. **Suggesting** borrowers are systematically maxing out their credit lines right before defaulting.
+- **Stage 2** shows **21.18%** elevated risk accounts, with a **48.72%** default rate, indicating
+nearly half of all accounts that fall 30–60 days past due end up defaulting, **suggesting** early delinquency signals are **strong predictors of default**.
 - **Stage 3** accounts exhibit an even **higher observed default rate of 71.92%**, **indicating greater financial stress and reduced repayment capacity**.  
 --------------------------------------------------
 
-## Business Implications
- **Finding:**    31.87% of the portfolio has a 65.92% default rate.                  
- **Suggestion:** Should be treated as the primary intervention segment.
+## Business Implications & Recommendations
+ **Finding:**    Stage 2 accounts account for 21.18% of volume but drive a 48.72% default rate.     
+ **Action:**     Prioritize Stage 2 for active collections and restructuring. Intervening here yields far higher loss recovery than attempting downstream recovery in Stage 3.
  
  **Finding:**    Early delinquency (1-2 month delay) is a strong default signal.    
- **Suggestion:** Trigger monitoring immediately.
+ **Action:**     Implement automated risk flags immediately upon a 1 Month Delay to engage borrowers before they roll over into secondary delinquency.
 
- **Finding:**    Stage 3 shows the highest utilization.                        
- **Suggestion:** Restrict credit exposure for these accounts.
-
- ***Targeting Stage 2 can reduce losses more efficiently than focusing only on Stage 3.***
-
+ **Finding:**    Stage 3 shows the highest utilization at 62.30% leading into defaults              
+ **Action:**     Trigger automatic credit line freezes or step-down decreases as soon as an account migrates to Stage 2 to prevent capital drawdown before charge-off.
 
 ----------------------------------------------------
 
