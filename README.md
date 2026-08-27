@@ -166,7 +166,7 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ### Defaulted Portfolio
-![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/0c34f8f27342af9f6847c3acebe54e2f9f029ae5/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png).
+![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/0c34f8f27342af9f6847c3acebe54e2f9f029ae5/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png)
 
 ## Key Insights
 
