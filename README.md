@@ -159,7 +159,7 @@ Risk monitoring framework showing:
 
 - **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**. Notably, revolving credit accounts for **49.12%** of all customer accounts **NT$1.16 billion** in active balances, signaling heavy reliance on continuous credit line roll-overs.
 - The overall portfolio default rate stands at **22.12% (6,636 accounts)**, establishing a high baseline risk environment across the retail lending base.
-- Customer distribution is heavily concentrated in the prime working-age cohort of **20-40 years old** with an **average age of 35.49**, indicating that default risks are directly linked to active workforce income dynamics rather than retirement income.
+- Customer distribution is heavily concentrated in the prime working-age cohort of **20-40 years old** with an **average age of 35.49**.
 - Female cardholders represent the majority of the portfolio at **60.37% vs. 39.63% male**, while single customers edge out married borrowers **53.89% vs. 46.11%**.
 - **Higher education cohorts** dominate portfolio at **47.51% and 35.84%** which account for over **83.35%** of all accounts and hold the vast majority of total exposure **NT$2.1bn** and **NT$2.3bn** respectively.
 --------------------------------------------------
@@ -169,11 +169,11 @@ Risk monitoring framework showing:
 
 ## Key Insights
 
-- **The portfolio** contains **22.12%** or **6,636 defaulted accounts**, representing the population examined in the default analysis layer.
-- **The average credit exposure** among defaulted accounts is approximately **NT$130K**, while the **median exposure** is **NT$90K**.
-- **Defaulted customers** have an **average age** of **roughly 36 years**, similar to the overall portfolio average.
-- **Education distribution** among defaulted customers is **led** by **undergraduate borrowers at 50.43%**, followed by **graduates at 30.83%** and **high-school borrowers at 18.73%**.
-- **The gender distribution** among defaulted customers **remains** relatively **balanced**.
+- **The portfolio** contains **22.12%** or **6,636 defaulted accounts**, representing the non-performing accounts.
+- **The average credit exposure** among defaulted accounts is approximately **NT$130K**, while the **median exposure** is **NT$90K**. The higher average points to heavy default losses coming from larger credit lines.
+- **Defaulted customers** have an **average age** of **roughly 36 years**, similar to the overall portfolio average. Indicating that default risks are directly linked to active workforce income dynamics rather than retirement income.
+- Male customers show a relatively higher rate of defaulting, expanding their portfolio presence from **39.63%** overall in the portfolio overview to **43.29%** among non-performing accounts.
+-  Graduate defaulters represent the highest average loss exposure per defaulted account at **NT$178K**, significantly outpacing Undergraduates at **NT$113K** and High School borrowers **NT$98K**
 --------------------------------------------------
 
 ### Credit Risk Staging and Financial Impact
