@@ -37,7 +37,7 @@ Risk monitoring framework showing:
 
 - **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**.
 - **Revolving credit share** accounts for **49.12% of customer accounts**, representing approximately **NT$1.16 Billion** in revolving credit.
-- **The overall default rate** is **22.1%**, representing **6,636** defaulted accounts.
+- **The overall default rate** is **22.12%**, representing **6,636** defaulted accounts.
 - **The customer base** is **concentrated** in the **20-40 age range**, **indicating** that the portfolio primarily serves **working-age borrowers**.
 - **Female customers** represent a slight majority of the portfolio at **60.37%**, while **male customers** account for **39.63%**.
 - **Education levels** are concentrated among **undergraduate** and **graduate customers**, representing **47.51%** and **35.84%** of the portfolio respectively.
