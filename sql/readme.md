@@ -50,10 +50,10 @@ Encoded numeric fields are converted into readable categorical values.
 
 ### Examples
 
-* Gender codes → **Male / Female**
-* Education levels → **Graduate / Undergrad / High School**
+* Gender codes to **Male / Female**
+* Education levels to **Graduate / Undergrad / High School**
 * Marital status standardized
-* Default indicator converted to **Yes / No**
+* Binary default indicator converted to **Yes / No**
 
 Monthly delay values are mapped to descriptive repayment states:
 
