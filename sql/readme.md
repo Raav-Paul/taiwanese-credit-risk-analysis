@@ -13,11 +13,9 @@ The scripts implement a structured workflow that moves from:
 
 [01_load.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/01_load.sql)
 
-[02_clean.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/02_clean.sql)
+[02_clean&standardize.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e05695b992d26c333682795b4d744d42cf303f22/sql/02_clean%26standardize.sql)
 
-[03_standardize.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/03_standardize.sql)
-
-[04_profiling.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/04_profiling.sql)
+[03_profiling.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e05695b992d26c333682795b4d744d42cf303f22/sql/03_profiling.sql)
 
 ----------------------------------------
 
@@ -96,7 +94,7 @@ This highlights the relationship between increasing payment delays and observed 
 
 ##  Credit Risk Staging
 
-A rule-based risk staging framework segments the portfolio into three risk categories based on recent repayment behavior and subsequent default outcomes. 
+Risk staging framework segments the portfolio into three risk categories based on recent repayment behavior. 
 
       Stage	    Description
       -----     ------------
@@ -104,7 +102,7 @@ A rule-based risk staging framework segments the portfolio into three risk categ
       Stage 2	Elevated risk accounts
       Stage 3	Non-performing accounts
 
-These stages allow the portfolio to be monitored by **risk severity, credit utilization, and default rates**.
+These stages allow the portfolio to be monitored by **risk severity**.
 
 -------------------------------------------------------
 
