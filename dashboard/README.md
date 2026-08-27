@@ -7,32 +7,25 @@
 - Page structure documentation
 
 ## Portfolio Overview
-
 High-level portfolio metrics, including:
-
 - Customer base size
 - Total credit exposure
-- Exposure at default
+- Revolving Credit Share
 - Portfolio default rate
 - Customer demographic distributions
-  
+
 ### Defaulted Portfolio Analysis
-
 Focused analysis of accounts that defaulted:
-
 * Payment deterioration trends
 * Demographic breakdown
 * Credit exposure patterns
 
 ### Credit Risk Staging
-
 Risk monitoring framework showing:
-
-* Portfolio distribution across risk stages
-* Exposure concentration
-* Credit utilization by stage
-* Default rates by risk stage
-
+- Portfolio distribution across risk stages
+- Exposure concentration
+- Credit utilization by stage
+- Default rates by risk stage
 
 --------------------------------------------------
 
