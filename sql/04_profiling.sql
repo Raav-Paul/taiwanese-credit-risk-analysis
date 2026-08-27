@@ -34,14 +34,14 @@ CREATE OR REPLACE VIEW risk_stage AS
                     AND Oct_default = 'No'
             THEN
                 'Stage 1 - Performing'
-            WHEN Sept_delay = '1 Month Delay' THEN 'Stage 2 - Elevated Risk'
+            WHEN Sept_delay IN ('1 Month Delay' , '2 Months Delay') THEN 'Stage 2 - Elevated Risk'
             WHEN
                 Sept_delay IN ('Balance Cleared' , 'Minimum Due Cleared', 'Dormant')
                     AND Oct_default = 'Yes'
             THEN
                 'Stage 2 - Elevated Risk'
             WHEN
-                Sept_delay IN ('2 Months Delay' , '3 Months Delay',
+                Sept_delay IN ( '3 Months Delay',
                     '4 Months Delay',
                     '5 Months Delay',
                     '6 Months Delay',
