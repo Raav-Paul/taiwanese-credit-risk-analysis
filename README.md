@@ -6,8 +6,7 @@ This project analyzes credit card default risk using the [UCI Taiwanese Credit C
 
 The objective is to build an interpretable credit risk monitoring framework that converts repayment behavior into actionable risk segments for early default detection and loss mitigation.  
 
-The workflow follows a structured pipeline that moves from: raw transactional data > cleaned staging table > data profiling >  BI dashboards.
-
+The workflow follows a structured pipeline that moves from: raw data > staging > cleaning > standardization > analytical views > BI dashboards
 
 ### Historical Context: Taiwan's 2005 Double-Card Crisis
 
