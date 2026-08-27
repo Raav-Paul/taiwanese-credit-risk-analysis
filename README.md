@@ -19,18 +19,15 @@ This dataset captures credit card behavior during Taiwan's 2005 card debt crisis
 
 - MySQL:
 
-     [01_load.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/01_load.sql)
+[01_load.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/01_load.sql)
 
-     [02_clean.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/02_clean.sql)
+[02_clean&standardize.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e05695b992d26c333682795b4d744d42cf303f22/sql/02_clean%26standardize.sql)
 
-     [03_standardize.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/03_standardize.sql)
-
-     [04_profiling.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/04_profiling.sql)
+[03_profiling.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e05695b992d26c333682795b4d744d42cf303f22/sql/03_profiling.sql)
   
 - Power BI:
 
-     [Taiwanese Defaults.pbix](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/1ab261db761114fa2021b1e1b19f791ad03c682d/dashboard/Taiwanese%20Defaults.pbix)
-- GitHub
+[Taiwanese Defaults.pbix](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/1ab261db761114fa2021b1e1b19f791ad03c682d/dashboard/Taiwanese%20Defaults.pbix)
 
 --------------------------------------------------
 
@@ -109,25 +106,12 @@ Examples include:
 
 These views help understand the composition of the credit portfolio.
 
--------------------------------------------------
-
-##  Default Behavior Analysis
-
-A view evaluates the relationship between **payment delay history and defaults**.
-
-The analysis calculates:
-
-* Total accounts within each payment-delay category
-* Number of subsequent defaults
-* Default percentage by delay category
-
-This highlights the relationship between increasing payment delays and observed default risk.
 
 ------------------------------------------------
 
 ##  Credit Risk Staging
 
-A rule-based risk staging framework segments the portfolio into three risk categories based on recent repayment behavior and subsequent default outcomes. 
+Risk staging framework segments the portfolio into three risk categories based on recent repayment behavior. 
 
       Stage	    Description
       -----     ------------
@@ -135,7 +119,7 @@ A rule-based risk staging framework segments the portfolio into three risk categ
       Stage 2	Elevated risk accounts
       Stage 3	Non-performing accounts
 
-These stages allow the portfolio to be monitored by **risk severity, credit utilization, and default rates**.
+These stages allow the portfolio to be monitored by **risk severity**.
 
 --------------------------------------------------
 
