@@ -210,22 +210,22 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ### Credit Risk Staging and Financial Impact
-![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/dec5cc44cec368aec407daa3b81251db7aa16c3e/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
+![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/d2e4c2bd4aa953fd55af9e3d87bcd6f649b7962b/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
 
 
 ## Key Insights
-- **The portfolio**  shows **66.58%** performing accounts, **22.98%** elevated-risk accounts, and **10.43%** non-performing accounts.
-- **Stage 3** accounts show the **highest credit utilization at 58.67%**, indicating a **greater financial stress**.
-- **Stage 2** accounts are comprised **primarily** of users with **one-month payment delays**, followed by those exhibiting **minimum payment behavior**.
-- **Stage 2** accounts show a **high default rate of 64.67%**, **suggesting** early delinquency signals are **strong predictors of default**.
-- **Stage 3** accounts exhibit an even **higher observed default rate of 69.55%**, confirming the severity of extended payment delays, **indicating greater financial stress and reduced repayment capacity**.  
+- **The portfolio**  shows **66.58%** performing accounts, **31.87%** elevated-risk accounts, and **1.54%** non-performing accounts.
+- **Stage 3** accounts show the **highest credit utilization at 62.30%**, indicating a **greater financial stress**.
+- **Stage 2** accounts are comprised **primarily** of users with **one-month and two-month payment delays**, followed by **previously cleared or dormant accounts** that subsequently **defaulted.**
+- **Stage 2** accounts show a **high default rate of 65.92%**, **suggesting** early delinquency signals are **strong predictors of default**.
+- **Stage 3** accounts exhibit an even **higher observed default rate of 71.92%**, **indicating greater financial stress and reduced repayment capacity**.  
 --------------------------------------------------
 
 ## Business Implications
- **Finding:**    23.98% of the portfolio has 64.67% default rate.                  
+ **Finding:**    31.87% of the portfolio has a 65.92% default rate.                  
  **Suggestion:** Should be treated as the primary intervention segment.
  
- **Finding:**    Early delinquency (1-month delay) is a strong default signal.    
+ **Finding:**    Early delinquency (1-2 month delay) is a strong default signal.    
  **Suggestion:** Trigger monitoring immediately.
 
  **Finding:**    Stage 3 shows the highest utilization.                        
