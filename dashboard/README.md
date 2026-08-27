@@ -31,7 +31,7 @@ Risk monitoring framework showing:
 
 ## Dashboard Preview
 ### Portfolio Overview
-![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/d62234b9029f8adfe2d2b60a056fb9627182bdca/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
+![Portfolio Overview](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/0c34f8f27342af9f6847c3acebe54e2f9f029ae5/dashboard/Taiwanese%20Credit%20Risk%20-%20Portfolio%20Overview.png)   
 
 ## Key Insights
 
@@ -44,7 +44,8 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ### Defaulted Portfolio
-![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/ff0a2bc070e1e478d3e20fb7d3a9af9118320ae0/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png).
+![Defaulted Portfolio](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/0c34f8f27342af9f6847c3acebe54e2f9f029ae5/dashboard/Taiwanese%20Credit%20Risk%20-%20Default%20Portfolio.png).
+
 ## Key Insights
 
 - **The portfolio** contains **22.12%** or **6,636 defaulted accounts**, representing the population examined in the default analysis layer.
@@ -57,8 +58,7 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ### Credit Risk Staging and Financial Impact
-![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/d2e4c2bd4aa953fd55af9e3d87bcd6f649b7962b/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
-
+![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/0c34f8f27342af9f6847c3acebe54e2f9f029ae5/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
 
 ## Key Insights
 - **The portfolio**  shows **66.58%** performing accounts, **31.87%** elevated-risk accounts, and **1.54%** non-performing accounts.
