@@ -78,20 +78,6 @@ These views help understand the composition of the credit portfolio.
 
 -------------------------------------------------
 
-##  Default Behavior Analysis
-
-A view evaluates the relationship between **payment delay history and defaults**.
-
-The analysis calculates:
-
-* Total accounts within each payment-delay category
-* Number of subsequent defaults
-* Default percentage by delay category
-
-This highlights the relationship between increasing payment delays and observed default risk.
-
-------------------------------------------------
-
 ##  Credit Risk Staging
 
 Risk staging framework segments the portfolio into three risk categories based on recent repayment behavior. 
