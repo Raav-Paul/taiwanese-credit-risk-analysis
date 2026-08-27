@@ -97,61 +97,45 @@ Monthly delay indicators were also mapped into interpretable repayment behavior:
 
 --------------------------------------------------
 
-###  Data Profiling
+##  Data Profiling
 
-Exploratory profiling views were created to understand portfolio characteristics:
-* Customer demographics
-* Default distribution
-* Age patterns across customer groups
+Views are created to explore demographic and portfolio characteristics.
 
-Example profiling output:
-* Average customer age
-* Default counts
-* Distribution of customers by education, gender, and marital status
+Examples include:
 
---------------------------------------------------
+* Customer distribution by gender, education, and marital status
+* Average age across segments
+* Default vs non-default counts
 
-###  Default Behavior Analysis
-The project evaluates how **payment delay history relates to default probability**.
-A view calculates:
-* Total accounts per delay category
-* Number of defaults
-* Default percentage
-This highlights how **increasing payment delays correlate strongly with higher default risk**.
+These views help understand the composition of the credit portfolio.
 
---------------------------------------------------
+-------------------------------------------------
 
-###  Payment Trend Monitoring
-A payment trend view evaluates repayment momentum using recent payment history.
-Accounts are classified as:
-* **Stable or Improving**
-* **Declining Trend**
-This provides an early signal of **potential financial deterioration**.
+##  Default Behavior Analysis
 
---------------------------------------------------
+A view evaluates the relationship between **payment delay history and defaults**.
 
-###  Customer Journey Mapping
-A journey framework categorizes customers based on payment behavior and default outcome.
-Possible stages include:
-* Healthy Customer Journey
-* Early Warning Stage
-* Intervention Required Stage
-* Assessment Required
-This framework helps simulate how lenders may monitor **customer risk progression over time**.
+The analysis calculates:
 
---------------------------------------------------
+* Total accounts within each payment-delay category
+* Number of subsequent defaults
+* Default percentage by delay category
 
-###  Risk Staging Framework
-The project implements a simplified **credit risk staging model** inspired by common banking frameworks.
-Accounts are classified into:
+This highlights the relationship between increasing payment delays and observed default risk.
 
-         Risk Stage                Description                           
-         -----------               ------------
-         Stage 1 - Performing      Customers meeting payment obligations 
-         Stage 2 - Elevated Risk   Early delinquency signals             
-         Stage 3 - Non-Performing  Severe payment delays                 
- 
-These stages allow portfolio segmentation and risk monitoring.
+------------------------------------------------
+
+##  Credit Risk Staging
+
+A rule-based risk staging framework segments the portfolio into three risk categories based on recent repayment behavior and subsequent default outcomes. 
+
+      Stage	    Description
+      -----     ------------
+      Stage 1	Performing accounts
+      Stage 2	Elevated risk accounts
+      Stage 3	Non-performing accounts
+
+These stages allow the portfolio to be monitored by **risk severity, credit utilization, and default rates**.
 
 --------------------------------------------------
 
@@ -191,7 +175,7 @@ Risk monitoring framework showing:
 
 - **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**.
 - **Revolving credit share** accounts for **49.12% of customer accounts**, representing approximately **NT$1.16 Billion** in revolving credit.
-- **The overall default rate** is **22.1%**, representing **6,636** defaulted accounts.
+- **The overall default rate** is **22.12%**, representing **6,636** defaulted accounts.
 - **The customer base** is **concentrated** in the **20-40 age range**, **indicating** that the portfolio primarily serves **working-age borrowers**.
 - **Female customers** represent a slight majority of the portfolio at **60.37%**, while **male customers** account for **39.63%**.
 - **Education levels** are concentrated among **undergraduate** and **graduate customers**, representing **47.51%** and **35.84%** of the portfolio respectively.
