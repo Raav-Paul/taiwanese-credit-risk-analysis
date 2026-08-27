@@ -11,7 +11,7 @@ The workflow follows a structured pipeline that moves from: raw transactional da
 
 ### Historical Context: Taiwan's 2005 Double-Card Crisis
 
-This dataset captures credit card behavior during Taiwan's 2005 card debt crisis, when more than 400,000 cardholders became unable to repay their debts due to predatory lending practices and a lack of regulatory oversight. Banks over-issued cards to unqualified applicants, including students without jobs, while cardholders over-extended themselves under 17-20% interest rates. 
+This dataset captures credit card behavior during Taiwan's 2005 card debt crisis, when more than 400,000 cardholders became unable to repay their debts amid aggressive lending practices and weak regulatory oversight. Banks over-issued cards to unqualified applicants, including students without jobs, while cardholders over-extended themselves under 17-20% interest rates. 
 
 
 --------------------------------------------------
