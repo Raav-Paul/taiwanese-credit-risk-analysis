@@ -157,12 +157,11 @@ Risk monitoring framework showing:
 
 ## Key Insights
 
-- **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**.
-- **Revolving credit share** accounts for **49.12% of customer accounts**, representing approximately **NT$1.16 Billion** in revolving credit.
-- **The overall default rate** is **22.12%**, representing **6,636** defaulted accounts.
-- **The customer base** is **concentrated** in the **20-40 age range**, **indicating** that the portfolio primarily serves **working-age borrowers**.
-- **Female customers** represent a slight majority of the portfolio at **60.37%**, while **male customers** account for **39.63%**.
-- **Education levels** are concentrated among **undergraduate** and **graduate customers**, representing **47.51%** and **35.84%** of the portfolio respectively.
+- **The portfolio** contains **30,000 credit card accounts** with total **approved credit limits** of approximately **NT$5.02 billion**. Notably, revolving credit accounts for **49.12%** of all customer accounts **NT$1.16 billion** in active balances, signaling heavy reliance on continuous credit line roll-overs.
+- The overall portfolio default rate stands at **22.12% (6,636 accounts)**, establishing a high baseline risk environment across the retail lending base.
+- Customer distribution is heavily concentrated in the prime working-age cohort of **20-40 years old** with an **average age of 35.49**, indicating that default risks are directly linked to active workforce income dynamics rather than retirement income.
+- Female cardholders represent the majority of the portfolio at **60.37% vs. 39.63% male**, while single customers edge out married borrowers **53.89% vs. 46.11%**.
+- **Higher education cohorts** dominate portfolio at **47.51% and 35.84%** which account for over **83.35%** of all accounts and hold the vast majority of total exposure **NT$2.1bn** and **NT$2.3bn** respectively.
 --------------------------------------------------
 
 ### Defaulted Portfolio
