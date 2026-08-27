@@ -82,49 +82,21 @@ These views help understand the composition of the credit portfolio.
 
 ##  Default Behavior Analysis
 
-A view evaluates the relationship between **payment delay history and default probability**.
+A view evaluates the relationship between **payment delay history and defaults**.
 
 The analysis calculates:
 
-* Total accounts per delay category
-* Number of defaults
-* Percentage of defaults
+* Total accounts within each payment-delay category
+* Number of subsequent defaults
+* Default percentage by delay category
 
-This highlights how increasing payment delays correlate with higher default risk.
+This highlights the relationship between increasing payment delays and observed default risk.
 
 ------------------------------------------------
 
-##  Payment Trend Analysis
-
-A payment trend view classifies repayment behavior based on recent payment patterns.
-
-Accounts are categorized as:
-
-* **Stable or Improving**
-* **Declining Trend**
-
-This provides an early indicator of financial deterioration.
-
---------------------------------------------------
-
-##  Customer Journey Classification
-
-Customers are grouped into behavioral journey stages based on repayment behavior and default outcomes.
-
-Possible classifications include:
-
-* Healthy Customer Journey
-* Early Warning Stage
-* Intervention Required Stage
-* Assessment Required
-
-This simulates how lenders may track **customer risk progression over time**.
-
----------------------------------------------------
-
 ##  Credit Risk Staging
 
-A rule-based risk staging framework segments the portfolio into three risk categories.
+A rule-based risk staging framework segments the portfolio into three risk categories based on recent repayment behavior and subsequent default outcomes. 
 
       Stage	    Description
       -----     ------------
@@ -132,17 +104,18 @@ A rule-based risk staging framework segments the portfolio into three risk categ
       Stage 2	Elevated risk accounts
       Stage 3	Non-performing accounts
 
-These stages allow the portfolio to be monitored by **risk severity and credit exposure**.
+These stages allow the portfolio to be monitored by **risk severity, credit utilization, and default rates**.
 
 -------------------------------------------------------
 
 # Output
 
-The SQL pipeline generates several analytical views that can be used directly in **business intelligence tools such as Power BI**.
+The SQL pipeline generates analytical views that can be used directly in **business intelligence tools such as Power BI**.
 
 These views support:
 
 * Portfolio risk monitoring
-* Exposure analysis
+* Portfolio and demographic profiling
+* Default distribution analysis
 * Default behavior analysis
-* Credit risk staging dashboards
+* Credit risk staging and portfolio segmentation
