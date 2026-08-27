@@ -178,7 +178,7 @@ Risk monitoring framework showing:
 --------------------------------------------------
 
 ### Credit Risk Staging and Financial Impact
-![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/0c34f8f27342af9f6847c3acebe54e2f9f029ae5/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
+![Credit Risk Staging and Financial Impact](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/0324901015b9b0d5eba86ce82e779ed4b2e7145c/dashboard/Taiwanese%20Credit%20Risk%20-%20Credit%20Risk%20Staging%20and%20Financial%20Impact.png)
 
 
 ## Key Insights
