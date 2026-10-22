@@ -11,11 +11,7 @@ The scripts implement a structured workflow that moves from:
 
 # Scripts Used
 
-[01_load.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/73c0b982c83e1aa28855bde2a60ee618a99bfaa4/sql/01_load.sql)
-
-[02_clean&standardize.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e05695b992d26c333682795b4d744d42cf303f22/sql/02_clean%26standardize.sql)
-
-[03_profiling.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/e05695b992d26c333682795b4d744d42cf303f22/sql/03_profiling.sql)
+[taiwanese_defaults.sql](https://github.com/Raav-Paul/taiwanese-credit-risk-analysis/blob/cfd67888464376ea09613112ba1ae3f2c6aeb2c9/sql/taiwanese_defaults.sql)
 
 ----------------------------------------
 
@@ -57,7 +53,7 @@ Encoded numeric fields are converted into readable categorical values.
 
 Monthly delay values are mapped to descriptive repayment states:
 
-* Dormant
+* No Consumption
 * Balance Cleared
 * Minimum Due Cleared
 * 1-9 Month Delay
